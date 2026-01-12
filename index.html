@@ -12,6 +12,7 @@
             --text-color: #333;
             --bg-color: #f8f9fa;
             --sidebar-bg: #ffffff;
+            --btn-color: #444;
         }
 
         body {
@@ -82,6 +83,27 @@
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+
+        /* BUTTON STYLE */
+        .btn-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: var(--btn-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-link:hover {
+            background-color: var(--accent-color);
         }
 
         .education-item {
@@ -173,9 +195,13 @@
         <div class="section-title">Contact</div>
         <ul class="contact-info">
             <li><i class="fa fa-phone"></i> +212 6 95 41 98 16</li>
-            <li><i class="fa fa-envelope"></i> marwadari186@reallygreatsite.com</li>
+            <li><i class="fa fa-envelope"></i> marwadari186@email.com</li>
             <li><i class="fa fa-map-marker-alt"></i> Rabat, Maroc</li>
         </ul>
+
+        <a href="https://www.overleaf.com/project/6962634e0a083f52c9ee3445/invite/token/9f3ba249f37f5051bf57bfd1dc6b790bbab9430ba1ed7151" target="_blank" class="btn-link">
+            <i class="fa fa-external-link-alt"></i> Voir mon projet Overleaf
+        </a>
 
         <div class="section-title">Formation</div>
         <div class="education-item">
