@@ -1,94 +1,254 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Marwa Dari | CV</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - MARWA DARI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #a89381;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --sidebar-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            box-shadow: 0 0 40px rgba(0,0,0,0.05);
+            min-height: 1100px;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            background-color: var(--sidebar-bg);
+            padding: 50px 35px;
+            border-right: 1px solid #eee;
+        }
+
+        .header-name {
+            margin-bottom: 60px;
+        }
+
+        .header-name h1 {
+            font-size: 32px;
+            letter-spacing: 6px;
+            margin: 0;
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+
+        .header-name h2 {
+            font-size: 20px;
+            letter-spacing: 4px;
+            margin: 5px 0 0 0;
+            color: var(--accent-color);
+            font-weight: 300;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 40px 0 20px 0;
+            color: var(--primary-color);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .contact-info, .info-list {
+            list-style: none;
+            padding: 0;
+            font-size: 13px;
+        }
+
+        .contact-info li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-year {
+            font-size: 12px;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .education-title {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 2px;
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            padding: 60px 50px;
+        }
+
+        .profile-text {
+            font-size: 14px;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .exp-item {
+            margin-bottom: 30px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .exp-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .exp-date {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .exp-details {
+            font-size: 13.5px;
+            padding-left: 18px;
+            margin-top: 8px;
+            color: #444;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 13px;
+        }
+
+        .skill-item::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; margin: 0; }
+            .sidebar { border-right: none; }
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
-
-    <!-- Sidebar -->
     <aside class="sidebar">
-        <h1>Marwa Dari</h1>
-        <p>Étudiante 2ème année - EST de Salé</p>
-
-        <div class="contact">
-            <p>Email: <a href="mailto:marwadari186@gmail.com">marwadari186@gmail.com</a></p>
-            <p>Tel: 0696419816</p>
-            <p>LinkedIn: <a href="#">Lien LinkedIn</a></p>
+        <div class="header-name">
+            <h1>DARI</h1>
+            <h2>MARWA</h2>
         </div>
 
-        <h2>Compétences</h2>
-        <div class="skill">
-            <span>Python</span>
-            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+        <div class="section-title">Contact</div>
+        <ul class="contact-info">
+            <li><i class="fa fa-phone"></i> +212 6 00 00 00 00</li>
+            <li><i class="fa fa-envelope"></i> hello@reallygreatsite.com</li>
+            <li><i class="fa fa-map-marker-alt"></i> 123 Anywhere St, Any City</li>
+        </ul>
+
+        <div class="section-title">Formation</div>
+        <div class="education-item">
+            <div class="education-year">2024 - 2025</div>
+            <div class="education-title">STAGIAIRE - Aswaq Assalam Rabat</div>
         </div>
-        <div class="skill">
-            <span>Data Analysis</span>
-            <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+        <div class="education-item">
+            <div class="education-year">2024 - 2026</div>
+            <div class="education-title">ETUDIANTE EN MARKETING DIGITAL ET COMMERCIAL - EST de Salé</div>
         </div>
-        <div class="skill">
-            <span>Kaggle</span>
-            <div class="bar"><div class="fill" style="width: 80%;"></div></div>
-        </div>
-        <div class="skill">
-            <span>Marketing Digital</span>
-            <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+        <div class="education-item">
+            <div class="education-year">2023 - 2024</div>
+            <div class="education-title">BACCALAURÉAT SVT - Lycée ibno rochd RABAT</div>
         </div>
 
+        <div class="section-title">Langues</div>
+        <ul class="info-list">
+            <li>Arabe: Langue maternelle</li>
+            <li>Français: Courant</li>
+            <li>Anglais: Intermédiaire</li>
+        </ul>
     </aside>
 
-    <!-- Main Content -->
     <main class="main-content">
-        <section class="section">
-            <h2>Profil</h2>
-            <p>
-                Étudiante motivée en marketing et analyse de données.
-                Passionnée par l’exploration des datasets et les outils digitaux.
-                Actuellement en stage à Asswaq Assalam, Rabat (Juin-Juillet 2025).
+        <section>
+            <div class="section-title">Profil</div>
+            <p class="profile-text">
+                Étudiante en 2e année de marketing digital et commercial à l'Est de Salé. j'ai effectué un stage chez Aswaq Assalam à Rabat (juin - juillet 2025). Expérience pratique en gestion des réseaux sociaux, analyse de données et création de contenu. Passionnée par le marketing digital et motivée pour contribuer à des projets innovants et développer mes compétences professionnelles.
             </p>
         </section>
 
-        <section class="section">
-            <h2>Formation</h2>
-            <div class="card">
-                <h3>Marketing & Data Science</h3>
-                <p>EST de Salé - 2ème année</p>
+        <section>
+            <div class="section-title">Expériences Professionnelles</div>
+            
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">DUT Marketing Digital et Commercial - EST de Salé</span>
+                    <span class="exp-date">2024 - Aujourd'hui</span>
+                </div>
+                <ul class="exp-details">
+                    <li>Projets académiques : analyse de marché, campagnes marketing, création de contenu digital</li>
+                    <li>Participation à des travaux pratiques en marketing digital et commercial.</li>
+                    <li>Réalisation d'une analyse de marché pour un produit/service</li>
+                    <li>Gestion d'une page Instagram/Facebook pour un projet d'école</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span class="exp-title">Stagiaire - Aswaq Assalam, Rabat</span>
+                    <span class="exp-date">Juin - Juillet 2025</span>
+                </div>
+                <ul class="exp-details">
+                    <li>Gestion des réseaux sociaux : planification et publication de contenus sur Instagram et Facebook</li>
+                    <li>Création de contenus visuels et rédactionnels pour les campagnes marketing</li>
+                    <li>Analyse des performances des publications et élaboration de rapports</li>
+                    <li>Participation à des projets marketing digital et recommandations pour améliorer la visibilité en ligne</li>
+                </ul>
             </div>
         </section>
 
-        <section class="section">
-            <h2>Expérience</h2>
-            <div class="card">
-                <h3>Stagiaire - Asswaq Assalam, Rabat</h3>
-                <p>Juin - Juillet 2025</p>
-                <p>Observation du comportement clients, participation aux ventes et marketing digital.</p>
+        <section>
+            <div class="section-title">Compétences</div>
+            <div class="skills-grid">
+                <div class="skill-item">Gestion des réseaux sociaux</div>
+                <div class="skill-item">Analyse de données</div>
+                <div class="skill-item">Maîtrise d'Excel, Word, Canva</div>
+                <div class="skill-item">GitHub & Réseaux sociaux</div>
+                <div class="skill-item">Créativité & Organisation</div>
+                <div class="skill-item">Esprit d'équipe</div>
             </div>
         </section>
-
-        <section class="section">
-            <h2>Projets</h2>
-            <div class="card">
-                <h3>Projet Kaggle</h3>
-                <p>Analyse d’un dataset marketing pour comprendre les comportements clients.</p>
-                <a href="https://share.google/OZBdmoHCgowkVF56E" class="btn" target="_blank">Voir Projet</a>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Langues</h2>
-            <ul class="skills-list">
-                <li>Arabe (Langue maternelle)</li>
-                <li>Français (Bon niveau)</li>
-                <li>Anglais (Niveau intermédiaire)</li>
-            </ul>
-        </section>
-
     </main>
-
 </div>
 
 </body>
